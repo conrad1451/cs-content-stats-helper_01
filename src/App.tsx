@@ -2,6 +2,9 @@
 // [1]: https://stackoverflow.com/questions/72584569/property-results-does-not-exist-on-type-axiosresponseany-any-with-axios
 // [2]: https://www.squash.io/passing-parameters-to-components-in-reactjs-with-typescript/
 
+// [3]: https://www.npmjs.com/package/react-wordcloud
+// "Note that react-wordcloud requires react^16.13.0 as a peer dependency."
+
 // import { useEffect, useState } from "react";
 import { useState } from "react";
 // import ReactWordcloud from "react-wordcloud";
