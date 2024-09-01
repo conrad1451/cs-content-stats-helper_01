@@ -1,6 +1,6 @@
 import ReactWordcloud from "react-wordcloud";
 
-import "./App.css";
+import "../App.css";
 
 // import altWords from "./altWords";
 

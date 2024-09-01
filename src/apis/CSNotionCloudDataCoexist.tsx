@@ -3,7 +3,7 @@
 
 import { useEffect, useState } from "react";
 import axios from "axios";
-import ReactWordCloudApp from "../WordCloud.tsx";
+import ReactWordCloudApp from "../React-Modules/WordCloud.tsx";
 
 import theWords from "../theWords.tsx";
 

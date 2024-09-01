@@ -8,21 +8,15 @@ dependencies:
   axios:
     specifier: 1.7.2
     version: 1.7.2
-  react:
-    specifier: ^18.2.0
-    version: 18.2.0
-  react-dom:
-    specifier: ^18.2.0
-    version: 18.2.0(react@18.2.0)
   react-wordcloud:
     specifier: 1.2.7
-    version: 1.2.7(react@18.2.0)
+    version: 1.2.7(react@16.14.0)
   typescript-exportdata:
     specifier: ^1.1.4
-    version: 1.1.4(react@18.2.0)
+    version: 1.1.4(react@16.14.0)
   typescript-table:
     specifier: ^3.1.39
-    version: 3.1.39(file-saver@2.0.5)(jspdf-autotable@3.8.3)(jspdf@2.5.1)(react@18.2.0)(typescript-exportdata@1.1.4)(xlsx@0.18.5)
+    version: 3.1.39(file-saver@2.0.5)(jspdf-autotable@3.8.3)(jspdf@2.5.1)(react@16.14.0)(typescript-exportdata@1.1.4)(xlsx@0.18.5)
 
 devDependencies:
   '@types/react':
@@ -1889,6 +1883,11 @@ packages:
     resolution: {integrity: sha512-y10wOWt8yZpqXmOgRo77WaHEmhYQYGNA6y421PKsKYWEK8aW+cqAphborZDhqfyKrbZEN92CN1X2KbafY2s7Yw==}
     dev: true
 
+  /object-assign@4.1.1:
+    resolution: {integrity: sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg==}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
   /once@1.4.0:
     resolution: {integrity: sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==}
     dependencies:
@@ -1977,6 +1976,14 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
+  /prop-types@15.8.1:
+    resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
   /proxy-from-env@1.1.0:
     resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
     dev: false
@@ -1998,22 +2005,16 @@ packages:
     dev: false
     optional: true
 
-  /react-dom@18.2.0(react@18.2.0):
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==}
-    peerDependencies:
-      react: ^18.2.0
-    dependencies:
-      loose-envify: 1.4.0
-      react: 18.2.0
-      scheduler: 0.23.0
-    dev: false
-
-  /react-icons@4.12.0(react@18.2.0):
+  /react-icons@4.12.0(react@16.14.0):
     resolution: {integrity: sha512-IBaDuHiShdZqmfc/TwHu6+d6k2ltNCf3AszxNmjJc1KUfXdEeRJOKyNvLmAHaarhzGmTSVygNdyu8/opXv2gaw==}
     peerDependencies:
       react: '*'
     dependencies:
-      react: 18.2.0
+      react: 16.14.0
+    dev: false
+
+  /react-is@16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
     dev: false
 
   /react-refresh@0.14.0:
@@ -2021,7 +2022,7 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /react-wordcloud@1.2.7(react@18.2.0):
+  /react-wordcloud@1.2.7(react@16.14.0):
     resolution: {integrity: sha512-pyXvL8Iu2J258Qk2/kAwY23dIVhNpMC3dnvbXRkw5+Ert5EkJWwnwVjs9q8CmX38NWbfCKhGmpjuumBoQEtniw==}
     peerDependencies:
       react: ^16.13.0
@@ -2035,17 +2036,19 @@ packages:
       d3-transition: 1.3.2
       lodash.clonedeep: 4.5.0
       lodash.debounce: 4.0.8
-      react: 18.2.0
+      react: 16.14.0
       resize-observer-polyfill: 1.5.1
       seedrandom: 3.0.5
       tippy.js: 6.3.7
     dev: false
 
-  /react@18.2.0:
-    resolution: {integrity: sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==}
+  /react@16.14.0:
+    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
     engines: {node: '>=0.10.0'}
     dependencies:
       loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.8.1
     dev: false
 
   /regenerator-runtime@0.13.11:
@@ -2114,12 +2117,6 @@ packages:
     dependencies:
       queue-microtask: 1.2.3
     dev: true
-
-  /scheduler@0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==}
-    dependencies:
-      loose-envify: 1.4.0
-    dev: false
 
   /seedrandom@3.0.5:
     resolution: {integrity: sha512-8OwmbklUNzwezjGInmZ+2clQmExQPvomqjL7LFqOYqtmuxRgQYqOD3mHaU+MvZn5FLUeVxVfQjwLZW/n/JFuqg==}
@@ -2258,19 +2255,19 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /typescript-exportdata@1.1.4(react@18.2.0):
+  /typescript-exportdata@1.1.4(react@16.14.0):
     resolution: {integrity: sha512-pa7KxuHVIfjESOxJVsPWNcAwVQ4R6strfaCA7E0iDG1EdsnYTDPkvtoXrMfFwrAxlnzOWE+7T/K3gR8W0sq7ng==}
     dependencies:
       file-saver: 2.0.5
       jspdf: 2.5.1
       jspdf-autotable: 3.8.3(jspdf@2.5.1)
-      react-icons: 4.12.0(react@18.2.0)
+      react-icons: 4.12.0(react@16.14.0)
       xlsx: 0.18.5
     transitivePeerDependencies:
       - react
     dev: false
 
-  /typescript-table@3.1.39(file-saver@2.0.5)(jspdf-autotable@3.8.3)(jspdf@2.5.1)(react@18.2.0)(typescript-exportdata@1.1.4)(xlsx@0.18.5):
+  /typescript-table@3.1.39(file-saver@2.0.5)(jspdf-autotable@3.8.3)(jspdf@2.5.1)(react@16.14.0)(typescript-exportdata@1.1.4)(xlsx@0.18.5):
     resolution: {integrity: sha512-J9chjmv8t2uf4dQRZuIJQJHav+fsHRKjiPMR81Yh6FRBxarwAUmX4V8Ut6uMneH6M6IFlTIE8kT9wgFRf9XGQg==}
     peerDependencies:
       file-saver: ^2.0.5
@@ -2282,8 +2279,8 @@ packages:
       file-saver: 2.0.5
       jspdf: 2.5.1
       jspdf-autotable: 3.8.3(jspdf@2.5.1)
-      react-icons: 4.12.0(react@18.2.0)
-      typescript-exportdata: 1.1.4(react@18.2.0)
+      react-icons: 4.12.0(react@16.14.0)
+      typescript-exportdata: 1.1.4(react@16.14.0)
       xlsx: 0.18.5
     transitivePeerDependencies:
       - react

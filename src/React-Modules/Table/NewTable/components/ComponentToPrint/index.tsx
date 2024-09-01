@@ -1,7 +1,7 @@
-import React, { useRef } from 'react';
-import {useReactToPrint} from "react-to-print";
+import React, { useRef } from "react";
+import { useReactToPrint } from "react-to-print";
 
-import { Table } from '../../components';
+import { Table } from "../../components";
 
 export const ComponentToPrint = ({ data }) => {
   const componentRef = useRef();

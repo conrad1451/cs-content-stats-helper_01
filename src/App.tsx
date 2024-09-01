@@ -10,8 +10,12 @@ import { useState } from "react";
 // import ReactWordcloud from "react-wordcloud";
 // import axios from "axios";
 
-import ReactWordCloudApp from "./WordCloud.tsx";
+import ReactWordCloudApp from "./React-Modules/WordCloud.tsx";
 import CSNotionPages from "./apis/CSNotionPages.tsx";
+import CSNotionPages2 from "./apis/CSNotionPages2.tsx";
+
+import TableSimple from "./apis/TestPage.tsx";
+
 // import CSNotionPagesV2 from "./apis/CSNotionPagesV2.tsx";
 // import CSNotionPagesV3 from "./apis/CSNotionCloudDataCoexist.tsx";
 // import CSNotionPagesData from "./apis/CSNotionPagesData.tsx";
@@ -31,7 +35,7 @@ import CSNotionPages from "./apis/CSNotionPages.tsx";
 import "./App.css";
 
 // import altWords from "./altWords";
-import theWords from "./theWords";
+import theWords from "./React-Modules/theWords.tsx";
 
 // const broFunc = async () => {
 //   // const res = await axios.get(`https://notion-cs-content.onrender.com/users`);
@@ -112,9 +116,13 @@ function PageView(key) {
       //     }}
       //   />
       // );
-      return <p>{"PagesInfo2"}</p>;
+      // return <p>{"PagesInfo2"}</p>;
 
-    // case 3:
+      return <TableSimple />;
+
+    case 3:
+      return <CSNotionPages2 />;
+
     // return <p>{"PagesInfo2"}</p>;
     // return <p>{<PagesInfo2 />}</p>;
     default:
@@ -130,7 +138,8 @@ function App() {
   const [curPage, setCurPage] = useState(0);
 
   // let numOptions = 2;
-  const numOptions = 3;
+  // const numOptions = 3;
+  const numOptions = 4;
 
   const handlePageChange = (event: any) => {
     event.preventDefault();
